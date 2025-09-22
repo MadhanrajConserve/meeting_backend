@@ -34,7 +34,7 @@ builder.Services.AddCors(options =>
         {
             if (string.IsNullOrEmpty(origin)) return false;
             var host = new Uri(origin).Host;
-            return host.Equals("teams-meeting-web.vercel.app", StringComparison.OrdinalIgnoreCase)
+            return host.Equals("meeting-frontend-omega.vercel.app", StringComparison.OrdinalIgnoreCase)
                    || host.EndsWith(".vercel.app", StringComparison.OrdinalIgnoreCase)
                    || host.StartsWith("localhost");
         })
